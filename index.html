@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ampliación Ocular - Triángulo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>AMPLIACIÓN OCULAR - TRIÁNGULO</h1>
+        <p class="instruction">Centrar la mirada en la línea del medio y deslizarla según la indicación. Percebir las palabras sin intentar leerlas.</p>
+        <div id="settings">
+            <label for="speedInput">Selecciona la velocidad (ms):</label>
+            <input type="number" id="speedInput" value="1000" min="100" step="100"> <!-- Valor por defecto de 1000ms -->
+        </div>
+        <div id="containerInputButton" class="container-input-button">
+            <button id="startButton">Iniciar</button>
+        </div>
+        <div id="timer"></div>
+        
+        <div id="triangleContainer" class="triangle-container hidden">
+            <div class="triangle">
+                <div class="center-line"></div>
+                <div id="textSlot">
+                    <div class="line">Va cayendo la</div>
+                    <div class="line">noche: La bruma ha</div>
+                    <div class="line">bajado a los montes el cielo;</div>
+                    <div class="line">una lluvia menuda y monótona</div>
+                    <div class="line">humedece los árboles secos. El rumor de sus</div>
+                    <div class="line">gotas penetra hasta el fondo sagrado del pecho, donde el</div>
+                    <div class="line">alma, dulcísima, esconde su perfume de amor y recuerdos. ¡Cómo</div>
+                    <div class="line">cae la bruma en el alma! ¡Qué tristeza de vagos misterios en sus nieblas</div>
+                    <div class="line">heladas esconden esas tardes sin sol ni luceros! En las tardes de rosas y brisas los</div>
+                    <div class="line">dolores se olvidan, riendo, y las penas glaciales se ocultan tras los ojos radiantes de fuego.</div>
+                </div>
+                
+                <div class="blue-highlight"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
